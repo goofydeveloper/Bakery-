@@ -60,7 +60,7 @@ class Muffin
     end 
     end
     #create objects and passing parameters to new method
-    xmuffin = Muffin. new("Chocolate Chip Muffin","Softbaked cookie with swiss chocolate chips that will have you feeling like your in a cozy cabin layiing of clouds","3.99")
+    xmuffin = Muffin. new("Chocolate Chip Muffin","Warm muffins with choclate chips on the outside and gooey swiss chocolate fudge that will have you feeling like you died and went to heaven","3.99")
     
     ymuffin = Muffin. new("Rasin Muffin","Warm and healthy good after meal snack","2.99")
     
