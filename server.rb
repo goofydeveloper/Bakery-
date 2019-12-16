@@ -1,7 +1,8 @@
 # myapp.rb
 
 require 'sinatra'
-require './bakery.rb'
+# require './bakery.rb'
+require_relative 'bakery'
 
 get '/' do
 erb :index

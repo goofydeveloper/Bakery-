@@ -3,7 +3,7 @@ body {
   font-family: sans-serif;
 }
 
-.grid-container {
+.container {
   display: grid;
   grid-template-columns: auto auto auto auto auto auto;
   grid-gap: 10px;
@@ -11,7 +11,7 @@ body {
   padding: 100px;
 }
 
-.grid-container>div {
+.container>div {
   text-align: center;
   padding: 20px 0;
   font-size: 30px;
@@ -146,3 +146,21 @@ body {
 }
 
 /* FOOTER  */
+
+/* Sub-pages css styling */
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto;
+  grid-gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.grid-container>div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+/* Sub-pages css styling */
