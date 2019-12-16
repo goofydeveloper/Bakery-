@@ -1,9 +1,15 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
 .grid-container {
   display: grid;
   grid-template-columns: auto auto auto auto auto auto;
   grid-gap: 10px;
   background-color: rgb(207, 163, 41);
   padding: 100px;
+  
 }
 
 .grid-container > div {
@@ -13,32 +19,55 @@
   font-size: 30px;
 }
 
+  /* For tablets: */
+
+@media only screen and (max-width:800px) {
+  .main {
+    width: 80%;
+    padding: 0;
+  }
+  .right {
+    width: 100%;
+  }
+  /* For tablets: */
+
+}
+/* For mobile phones: */
+@media only screen and (max-width:500px) {
+  .menu, .main, .right {
+    width: 100%;
+  }
+}  
+/* For mobile phones: */
+
 /* HEADING  */
-.item1 {
+.heading {
   grid-area: 1 / 2 / 2 / 6;
+  font-style: italic;
+  text-decoration: underline;
 }
 /* HEADING  */
 
 /* NAV BAR  */
-.item2 {
+.nav {
   grid-area: 2/2/3/6;
 }
 
-.item2 {
+.nav {
   overflow: hidden;
   background-color: #333;
 }
 
-.item2 a {
+.nav a {
   float: center;
   display: block;
-  color: #c91c7b;
-  /* text-align: center; */
+  color: #1a1605;
+  background-image: linear-gradient(brown,pink);
   padding: 14px 16px;
-  text-decoration: none;
+  text-decoration: underline;
 }
 
-.item2 a:hover {
+.nav a:hover {
   background-color: #ddd;
   color: black;
 }
@@ -47,37 +76,46 @@
 
 /* ABOUT ME CONTENT  */
 
-.item5 {
+.about {
   grid-area: 3/2/6/6;
+}
+
+.about h2 {
+  font-style: italic;
+  text-decoration: underline;
+}
+
+.about p {
+  font-style: inherit;
 }
 
 /* ABOUT ME CONTENT  */
 
 
 /* CHEF GUY  */
-.item9 {
+.mchef {
   grid-area: 3/1/6/2;
 }
 /* CHEF GUY   */
 
 /* CHEF GIRL  */
-.item10 {
+.wchef {
   grid-area: 3/6/6/7;
 }
 /* CHEF GIRL  */
 
 /* COOKIES IN THE NAV  */
-.item11 {
+.cookies1 {
   grid-area: 2/2/3/3;
 }
 
-.item12 {
+.cookies2 {
   grid-area: 2/5/3/6;
 }
 /* COOKIES IN THE NAV  */
 
 /* FOOTER  */
-.item6 {
+.footer {
   grid-area: 6/2/7/6;
 }
 /* FOOTER  */
