@@ -9,35 +9,39 @@ body {
   grid-gap: 10px;
   background-color: rgb(207, 163, 41);
   padding: 100px;
-  
 }
 
-.grid-container > div {
-  background-color: rgba(255, 255, 255, 0.8);
+.grid-container>div {
   text-align: center;
   padding: 20px 0;
   font-size: 30px;
 }
 
-  /* For tablets: */
-
+/* For tablets: */
 @media only screen and (max-width:800px) {
   .main {
     width: 80%;
     padding: 0;
   }
+
   .right {
     width: 100%;
   }
+
   /* For tablets: */
 
 }
+
 /* For mobile phones: */
 @media only screen and (max-width:500px) {
-  .menu, .main, .right {
+
+  .menu,
+  .main,
+  .right {
     width: 100%;
   }
-}  
+}
+
 /* For mobile phones: */
 
 /* HEADING  */
@@ -46,37 +50,45 @@ body {
   font-style: italic;
   text-decoration: underline;
 }
+
 /* HEADING  */
 
 /* NAV BAR  */
 .nav {
+  /* background-color: rgba(255, 255, 255, 0.8); */
   grid-area: 2/2/3/6;
 }
 
 .nav {
   overflow: hidden;
-  background-color: #333;
+  /* background-color:; */
 }
 
 .nav a {
   float: center;
   display: block;
   color: #1a1605;
-  background-image: linear-gradient(brown,pink);
   padding: 14px 16px;
   text-decoration: underline;
 }
 
 .nav a:hover {
   background-color: #ddd;
+  border-radius: 50%;
   color: black;
 }
 
 /* NAV BAR  */
 
+.prompt {
+  grid-area: 2 / 2 / 2 / 5;
+  text-align: center;
+}
+
 /* ABOUT ME CONTENT  */
 
 .about {
+  background-color: rgba(255, 255, 255, 0.8);
   grid-area: 3/2/6/6;
 }
 
@@ -94,29 +106,43 @@ body {
 
 /* CHEF GUY  */
 .mchef {
+  background-color: rgba(255, 255, 255, 0.8);
   grid-area: 3/1/6/2;
 }
+
 /* CHEF GUY   */
 
 /* CHEF GIRL  */
 .wchef {
   grid-area: 3/6/6/7;
+  background-color: rgba(255, 255, 255, 0.8);
 }
+
 /* CHEF GIRL  */
 
-/* COOKIES IN THE NAV  */
-.cookies1 {
+/* COOKIES and CAKES IN THE NAV  */
+.cake1 {
   grid-area: 2/2/3/3;
 }
 
-.cookies2 {
+.cake2 {
   grid-area: 2/5/3/6;
 }
-/* COOKIES IN THE NAV  */
+
+.cookies1 {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.cookies2 {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+/* COOKIES and CAKES IN THE NAV  */
 
 /* FOOTER  */
 .footer {
   grid-area: 6/2/7/6;
+  background-color: rgba(255, 255, 255, 0.8);
 }
-/* FOOTER  */
 
+/* FOOTER  */
