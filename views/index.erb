@@ -19,10 +19,14 @@
             <a href="cookie">Cookies</a>
             <a href="cake">Cakes</a>
             <a href="muffin">Muffins</a>
-            <button onclick="myFunction()"><a id="goods">Free Catalog</a></button>
+            <form action="/send_text" method="POST">
+                 <input type="text" name="number" placeholder="Enter phone here..."><br>
+                <input type="submit" value="Submit">
+            </form>
+            <%# <button onclick="myFunction()"><a id="goods">Free Catalog</a></button> %>
         </div>
 
-        <div class="prompt">
+        <%# <div class="prompt">
             <script>
                 function myFunction() {
                     var txt;
@@ -35,7 +39,7 @@
                     document.getElementById("goods").innerHTML = txt;
                 }
             </script>
-        </div>
+        </div> %>
 
         <div class="about">
             <h2>WHY WE DO WHAT WE DO</h2>

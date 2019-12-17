@@ -6,6 +6,8 @@ body {
 .container {
   display: grid;
   grid-template-columns: auto auto auto auto auto auto;
+  /* grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); */
+  /* grid-template-rows: repeat(6, 200px); */
   grid-gap: 10px;
   background-color: rgb(207, 163, 41);
   padding: 100px;
@@ -16,33 +18,6 @@ body {
   padding: 20px 0;
   font-size: 30px;
 }
-
-/* For tablets: */
-@media only screen and (max-width:800px) {
-  .main {
-    width: 80%;
-    padding: 0;
-  }
-
-  .right {
-    width: 100%;
-  }
-
-  /* For tablets: */
-
-}
-
-/* For mobile phones: */
-@media only screen and (max-width:500px) {
-
-  .menu,
-  .main,
-  .right {
-    width: 100%;
-  }
-}
-
-/* For mobile phones: */
 
 /* HEADING  */
 .heading {
@@ -152,15 +127,11 @@ body {
   display: grid;
   grid-template-columns: auto auto auto auto auto auto;
   grid-gap: 10px;
-  background-color: #2196F3;
+  background-color: burlywood;
   padding: 10px;
   font-family: 'Courier New', Courier, monospace;
-}
-
-.grid-container>div {
-  background-color: rgba(255, 255, 255, 0.8);
-  text-align: center;
-  padding: 20px 0;
-  font-size: 30px;
+  text-decoration: underline;
+  overflow: hidden;
+  height: 100%;
 }
 /* Sub-pages css styling */
