@@ -1,6 +1,8 @@
 body {
   margin: 0;
   font-family: sans-serif;
+  background-color: burlywood;
+
 }
 
 .container {
@@ -133,5 +135,9 @@ body {
   text-decoration: underline;
   overflow: hidden;
   height: 100%;
+}
+
+.h1 {
+  text-decoration: underline;
 }
 /* Sub-pages css styling */
